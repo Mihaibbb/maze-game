@@ -1,0 +1,56 @@
+*,
+*::before,
+*::after 
+{
+    box-sizing: border-box;
+}
+
+body 
+{
+    margin: 0;
+    padding: 0;
+    background: url("./img/background2.svg");
+    
+    background-attachment: fixed;
+    width: 100%;
+    min-height: 100vh;
+}
+
+table, tr, td 
+{
+    
+    position: relative;
+    border-collapse: collapse;
+    
+}
+
+.cell 
+{
+    width: calc(100% / 12);
+    height: calc(100% / 12);
+}
+
+.cell:not(.void)
+{
+    
+    background: #006a4e;
+}
+
+.game 
+{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.board 
+{
+    width: 100%;
+    max-width: 800px;
+    border: 4px solid #b8d5cd;
+}
+
+
+
